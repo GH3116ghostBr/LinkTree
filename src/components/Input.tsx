@@ -18,7 +18,7 @@ export function Input(props: InputProps) {
             id={props.id} 
             name={props.name} 
             placeholder={props.placeholder || ""} 
-            className="bg-white border border-gray-50 rounded-block px-4 py-2 w-full  "
+            className="bg-white border border-gray-300 rounded px-4 py-2 w-full placeholder-gray-400"
             value={props.value}
             onChange={props.onChange}/>
         </div>
