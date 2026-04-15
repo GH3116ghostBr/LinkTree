@@ -3,35 +3,8 @@ import { Aside } from "./Header/Aside";
 import { MainEdit } from "./Header/MainEdit";
 
 
-interface Link {
-    name : string,
-    url : string
-}
-
 export const EditPage = () => {
-    const [name, setName] = useState("Julia")
-    const [links, setLinks] = useState<Link[]>([])
-
-    const [Linkedin, setLinkedin] = useState("");
-    const [Instagram, setInstagram] = useState("");
-    const [Tiktok, setTiktok] = useState("");
-    const [Facebook, setFacebook] = useState("");
-    const [Github, setGithub] = useState("");
-
-    const handleAddLink = () => {
-        setLinks([...links, {name: "", url: ""}])
-    }
-
-    const handleLinkChange = (index: number, field: string, value: string) => {
-        const updatedLinks =  [...links]
-        updatedLinks[index] = {
-            ...updatedLinks[index],
-            [field]: value,
-        }
-
-        setLinks(updatedLinks)
-
-    }
+   
 
     const [variant, setVariant] = useState<"default">("default");
 
